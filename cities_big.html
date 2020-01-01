@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cities_big</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<table style="width:62%;">
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>City</strong></th>
+<th style="text-align: right;"><strong>mean pop</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Shanghai</td>
+<td style="text-align: right;">18683866</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BEIJING (PEKING)</td>
+<td style="text-align: right;">15560982</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MEXICO, CIUDAD DE</td>
+<td style="text-align: right;">14438379</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mumbai (Bombay)</td>
+<td style="text-align: right;">14206418</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Karachi</td>
+<td style="text-align: right;">12124688</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BUENOS AIRES</td>
+<td style="text-align: right;">11517033</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Delhi</td>
+<td style="text-align: right;">11378321</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MOSKVA</td>
+<td style="text-align: right;">10980519</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SEOUL</td>
+<td style="text-align: right;">9952090</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Chongqing</td>
+<td style="text-align: right;">9691901</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">New York (NY)</td>
+<td style="text-align: right;">9258136</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">JAKARTA</td>
+<td style="text-align: right;">9214195</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TOKYO</td>
+<td style="text-align: right;">9164417</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Guangzhou</td>
+<td style="text-align: right;">8524826</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bruhat Bengaluru Mahanagara</td>
+<td style="text-align: right;">8495492</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wuhan</td>
+<td style="text-align: right;">8312700</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TEHRAN</td>
+<td style="text-align: right;">8217213</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LONDON</td>
+<td style="text-align: right;">8206959</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Lahore</td>
+<td style="text-align: right;">8134890</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CAIRO</td>
+<td style="text-align: right;">8037427</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tianjin</td>
+<td style="text-align: right;">7499181</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kolkata (Calcutta)</td>
+<td style="text-align: right;">7425089</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HONG KONG SAR</td>
+<td style="text-align: right;">7077759</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LIMA</td>
+<td style="text-align: right;">7077438</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Shenzhen</td>
+<td style="text-align: right;">7008831</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BANGKOK</td>
+<td style="text-align: right;">7005169</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Greater Hyderabad Municipal</td>
+<td style="text-align: right;">6993262</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tlalnepantla</td>
+<td style="text-align: right;">6923418</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BOGOTÁ, D.C .</td>
+<td style="text-align: right;">6771008</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dongguan</td>
+<td style="text-align: right;">6445777</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rio de Janeiro</td>
+<td style="text-align: right;">6320446</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">DHAKA</td>
+<td style="text-align: right;">5878931</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sao Paulo</td>
+<td style="text-align: right;">5629119</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SANTIAGO</td>
+<td style="text-align: right;">5353908</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Shenyang</td>
+<td style="text-align: right;">5303053</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PARIS</td>
+<td style="text-align: right;">5228955</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Lagos</td>
+<td style="text-align: right;">5195247</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Chennai</td>
+<td style="text-align: right;">5183540</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bangalore</td>
+<td style="text-align: right;">5001386</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SINGAPORE</td>
+<td style="text-align: right;">4924826</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Greater Sydney</td>
+<td style="text-align: right;">4847926</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">St. Petersburg</td>
+<td style="text-align: right;">4731950</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Los Angeles (CA)</td>
+<td style="text-align: right;">4642796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Toronto</td>
+<td style="text-align: right;">4617842</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ahmadabad</td>
+<td style="text-align: right;">4559675</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Xi’an</td>
+<td style="text-align: right;">4481508</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Greater Melbourne</td>
+<td style="text-align: right;">4473692</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Chengdu</td>
+<td style="text-align: right;">4333541</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Alexandria</td>
+<td style="text-align: right;">4177803</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sydney</td>
+<td style="text-align: right;">4079252</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RIYADH</td>
+<td style="text-align: right;">3999553</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Yangon</td>
+<td style="text-align: right;">3862227</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BAGHDAD</td>
+<td style="text-align: right;">3841268</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Melbourne</td>
+<td style="text-align: right;">3729128</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Guadalajara</td>
+<td style="text-align: right;">3625724</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Nanjing</td>
+<td style="text-align: right;">3624234</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Yokohama</td>
+<td style="text-align: right;">3582636</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Haerbin</td>
+<td style="text-align: right;">3481504</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Busan (Pusan)</td>
+<td style="text-align: right;">3474268</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BERLIN</td>
+<td style="text-align: right;">3449117</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Monterrey</td>
+<td style="text-align: right;">3380694</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Chicago (IL)</td>
+<td style="text-align: right;">3342344</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Surat</td>
+<td style="text-align: right;">3249020</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dalian</td>
+<td style="text-align: right;">3245191</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MADRID</td>
+<td style="text-align: right;">3227511</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Changchun</td>
+<td style="text-align: right;">3225557</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Abidjan</td>
+<td style="text-align: right;">3162161</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pune</td>
+<td style="text-align: right;">3141189</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NAIROBI</td>
+<td style="text-align: right;">3133518</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hyderabad</td>
+<td style="text-align: right;">3069777</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Montreal</td>
+<td style="text-align: right;">3066096</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
