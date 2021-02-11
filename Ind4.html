@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Two holy cities</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+	
+</head>
+<body>
+<div id="mapid" style="width: 1300px; height: 900px;"></div>
+<script>
+
+	var mymap = L.map('mapid').setView([20.5937, 78.9629], 5);
+
+	L.tileLayer('http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+}).addTo(mymap);
+
+
+var circle = L.circle([27.4925, 77.67361], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.3,
+    radius: 5000
+}).addTo(mymap);
+
+var circle = L.circle([9.9252, 78.1198], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.3,
+    radius: 5000
+}).addTo(mymap);
+
+var latlngs = [
+    [27.4925, 77.67361],
+    [9.9252, 78.1198]
+];
+
+var polyline = L.polyline(latlngs, {
+       color: 'blue', 
+       opacity: '0.5', 
+       weight: '5'
+        }).addTo(mymap);
+
+
+var marker = new L.marker([27.4925, 77.67361]); marker.bindTooltip("मथुरा", {permanent: true, className: "my-label", offset: [0,0] });
+marker.addTo(mymap);
+
+var marker = new L.marker([9.9252, 78.1198]); marker.bindTooltip("मधुरै", {permanent: true, className: "my-label", offset: [0,0] });
+marker.addTo(mymap);
+
+</script>
+</body>
+</html>
